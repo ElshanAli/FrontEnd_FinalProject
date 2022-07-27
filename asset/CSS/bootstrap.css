@@ -737,6 +737,10 @@ progress {
   flex: 0 0 auto;
   width: 16.66666667%;
 }
+.col-2-5{
+  flex: 0 0 auto;
+  width: 18%;
+}
 
 .col-3 {
   flex: 0 0 auto;
@@ -7345,6 +7349,10 @@ textarea.form-control-lg {
 
 .w-75 {
   width: 75% !important;
+}
+
+.w-85 {
+  width: 85% !important;
 }
 
 .w-100 {

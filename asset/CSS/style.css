@@ -150,6 +150,7 @@ li {
 }
 .all-upper-footer .left-limited span {
   display: block;
+  text-align: right;
   line-height: 1;
   font-size: 12px;
   color: #DC6000;
@@ -164,6 +165,13 @@ li {
   margin-bottom: 0;
   font-weight: 600;
   letter-spacing: 2px;
+}
+.all-upper-footer .left-limited .braclet {
+  display: block;
+  text-align: right;
+}
+.all-upper-footer .left-limited .discount-img {
+  margin-left: 40px;
 }
 .all-upper-footer .right-limited {
   position: relative;
@@ -197,6 +205,7 @@ li {
 }
 .all-upper-footer .right-limited .off {
   color: #fff;
+  font-weight: 600;
 }
 
 .all-footer {
@@ -302,4 +311,343 @@ li {
 }
 .all-footer .lowest-part .left-content p {
   color: #7d7d7d;
+}
+
+#Slider {
+  position: relative;
+  background-image: url(/asset/image/slider_bg.jpg);
+  padding: 6rem 0;
+  margin-bottom: 75px;
+}
+#Slider .left-slide h5 {
+  font-size: 65px;
+  color: #252525;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+#Slider .left-slide h2 {
+  font-size: 45px;
+  color: #252525;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+#Slider .left-slide p {
+  margin-bottom: 50px;
+}
+#Slider .left-slide p span {
+  color: #0465d2;
+}
+#Slider .left-slide .shop-now-slide {
+  border: 1px solid #0465D2;
+  background-color: #0465D2;
+  color: #fff;
+  padding: 13px 27px;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+#Slider .left-slide .shop-now-slide:hover {
+  background-color: black;
+  border-color: black;
+  color: #fff;
+}
+#Slider .slider-prev,
+#Slider .slider-next {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border: none;
+  bottom: 20px;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+#Slider .slider-prev:hover,
+#Slider .slider-next:hover {
+  color: #FF6000;
+}
+#Slider .slider-prev {
+  right: 50%;
+}
+#Slider .slider-next {
+  left: 50%;
+}
+
+#device-section .devices .whole-devices {
+  position: relative;
+  margin-bottom: 65px;
+}
+#device-section .devices .whole-devices .device-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+#device-section .devices .whole-devices .device-img .sale {
+  position: absolute;
+  top: 7px;
+  left: -6px;
+  background-color: #FF6000;
+  padding: 0 8px;
+  color: white;
+  border-radius: 5px;
+}
+#device-section .devices .whole-devices:hover .add-to-cart-hover {
+  opacity: 1;
+  bottom: 75px;
+}
+#device-section .devices .whole-devices .add-to-cart-hover {
+  width: 85%;
+  position: absolute;
+  bottom: 51px;
+  left: 4px;
+  opacity: 0;
+  transition: 0.6s;
+}
+#device-section .devices .whole-devices .add-to-cart-hover .top-icon {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+#device-section .devices .whole-devices .add-to-cart-hover .add-cart {
+  background-color: #303030;
+}
+#device-section .devices .whole-devices .add-to-cart-hover .add-cart a {
+  color: white;
+  font-size: 15px;
+}
+
+#Services .all-services {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.194);
+}
+#Services .all-services .delivery:not(:last-child) {
+  border-right: 1px solid rgba(128, 128, 128, 0.194);
+}
+#Services .all-services .delivery:hover .delivery-img {
+  transform: rotateY(360deg);
+}
+#Services .all-services .delivery .delivery-img {
+  height: 4rem;
+  transition: 0.5s linear;
+}
+#Services .all-services .delivery .delivery-content h6 {
+  transition: 0.2s;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #252525;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#Services .all-services .delivery .delivery-content h6:hover {
+  color: #0465D2;
+}
+#Services .all-services .delivery .delivery-content span {
+  color: #7d7d7d;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#Modern-Deals {
+  background-color: #F2F2F2;
+}
+#Modern-Deals .advs-box {
+  position: relative;
+  margin-left: 11rem;
+  width: 73%;
+  margin-top: 100px;
+}
+#Modern-Deals .advs-box .single-advs {
+  background-image: url(/asset/image/advs.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  padding: 55px 0px 55px 45px;
+}
+#Modern-Deals .advs-box .single-advs .advs-info {
+  position: relative;
+  color: white;
+}
+#Modern-Deals .advs-box .single-advs .advs-info h6 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+#Modern-Deals .advs-box .single-advs .advs-info h3 {
+  font-size: 25px;
+}
+#Modern-Deals .advs-box .single-advs .advs-info p {
+  margin: 30px 0 50px 0;
+}
+#Modern-Deals .advs-box .single-advs .advs-info a {
+  display: block;
+  width: 40%;
+  background-color: #FF6000;
+  border-color: #FF6000;
+  box-shadow: none;
+  border-radius: 7px;
+  padding: 9px 0;
+  color: white;
+  text-align: center;
+}
+#Modern-Deals .advs-box .advs-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  border-radius: 7px;
+}
+#Modern-Deals .advs-box .single-advss {
+  background-image: url(/asset/image/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  padding: 55px 25px 55px 49px;
+}
+#Modern-Deals .advs-box .single-advss .advs-info {
+  position: relative;
+  color: white;
+}
+#Modern-Deals .advs-box .single-advss .advs-info h6 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+#Modern-Deals .advs-box .single-advss .advs-info h3 {
+  font-size: 28px;
+  margin: 30px 0 70px 0;
+}
+#Modern-Deals .advs-box .single-advss .advs-info a {
+  display: block;
+  width: 43%;
+  background-color: #FF6000;
+  border-color: #FF6000;
+  box-shadow: none;
+  border-radius: 7px;
+  padding: 9px 0;
+  color: white;
+  text-align: center;
+}
+#Modern-Deals .advs-box .advs-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  border-radius: 7px;
+}
+#Modern-Deals .whole-product {
+  margin-top: 100px;
+}
+#Modern-Deals .whole-product .top-content p {
+  color: #FF6000;
+  font-size: 12px;
+  font-weight: 500;
+}
+#Modern-Deals .whole-product .top-content .top-all {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.193);
+}
+#Modern-Deals .whole-product .top-content .top-all .top-left h3 {
+  letter-spacing: 1px;
+  font-size: 28px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+#Modern-Deals .whole-product .top-content .top-all .top-right a span {
+  color: #FF6000;
+  line-height: 1;
+  font-size: 15px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices {
+  position: relative;
+  margin-bottom: 65px;
+  background-color: #fff;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .device-price .solid-under {
+  margin-bottom: 40px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .device-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .device-img .sale {
+  position: absolute;
+  top: 7px;
+  left: -6px;
+  background-color: #FF6000;
+  padding: 0 8px;
+  color: white;
+  border-radius: 5px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices:hover .add-to-cart-hover {
+  opacity: 1;
+  bottom: 370px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .add-to-cart-hover {
+  width: 100%;
+  position: absolute;
+  bottom: 330px;
+  left: 0;
+  opacity: 0;
+  transition: 0.6s;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .add-to-cart-hover .top-icon {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .add-to-cart-hover .add-cart {
+  background-color: #303030;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .add-to-cart-hover .add-cart a {
+  color: white;
+  font-size: 15px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .stock {
+  position: relative;
+  border-top: 1px solid rgba(128, 128, 128, 0.311);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .stock ul {
+  margin: 40px 0px 5px -29px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .stock ul li {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: #909090;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .stock #file {
+  padding: 0 130px;
+  margin: 10px 0 15px 0;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .time-of-stock .top-time p {
+  line-height: 1.4;
+  font-weight: 600;
+  color: #9B9B9B;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .time-of-stock .top-time p span {
+  font-size: 16px;
+  color: #F7BA01;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .time-of-stock .buttom-time {
+  padding-bottom: 50px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .time-of-stock .buttom-time span {
+  border: 1px solid #252525;
+  background-color: #252525;
+  color: white;
+  padding: 0px 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 6px;
+}
+#Modern-Deals .whole-product .buttom-slider .for-slider .whole-devices .stock_time .time-of-stock .buttom-time .yellow-second {
+  background-color: #F7BA01;
+  border-color: #F7BA01;
 }/*# sourceMappingURL=style.css.map */
