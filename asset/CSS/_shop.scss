@@ -1,0 +1,1314 @@
+@media(max-width:768px) {
+    .all-product-detail {
+        display: none;
+    }
+}
+
+#All {
+    h6 {
+        font-size: 22px;
+        color: #252525;
+        line-height: 1.8;
+        font-weight: 500;
+    }
+
+    ul {
+        li {
+            padding: 7px 0;
+
+            a {
+
+
+                label {
+                    margin-left: 7px;
+                    color: #252525;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+
+
+    .color-status {
+        h6 {
+            margin-top: 15px;
+        }
+
+        span {
+            border: 1px solid #F2F2F2;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 400;
+            background-color: #F2F2F2;
+            color: #7d7d7d;
+        }
+
+        a {
+            font-size: 15px;
+            color: #252525;
+            padding: 8px 0;
+        }
+    }
+
+    /* Reset style for input range */
+    /* Style toddler input range */
+    /* Style track input range */
+    /* Style for input value block */
+    /* Style for active state input */
+    /* Style track input range */
+    /*buna deyme*/
+    .wrapper {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        margin-right: 22px;
+    }
+
+    .filter-price {
+        width: 220px;
+        border: 0;
+        padding: 0;
+        margin: 0;
+
+        h6 {
+            margin-left: 18px;
+        }
+    }
+
+    .price-title {
+        position: relative;
+        padding: 8px 15px;
+        margin-left: 15px;
+        font-size: 12px;
+        border-radius: 4px !important;
+        text-transform: uppercase;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        transition: .4s;
+        background-color: #e2e2e2;
+
+        &:hover {
+            background-color: #ff6000;
+            color: #fff;
+        }
+    }
+
+    .price-field {
+        position: relative;
+        width: 100%;
+        height: 36px;
+        box-sizing: border-box;
+        background: #fff;
+        padding-top: 15px;
+        padding-left: 16px;
+        border-radius: 3px;
+
+        #lower {
+            #value {
+                font-size: 20px;
+            }
+        }
+
+        input[type=range] {
+            position: absolute;
+            width: 200px;
+            height: 2px;
+            border: 0;
+            outline: 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            pointer-events: none;
+            -webkit-appearance: none;
+
+            &::-webkit-slider-thumb {
+                position: relative;
+                -webkit-appearance: none;
+                margin: 0;
+                border: 0;
+                outline: 0;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin-top: -4px;
+                background-color: #e2e2e2;
+                cursor: pointer;
+                cursor: pointer;
+                pointer-events: all;
+                z-index: 100;
+            }
+
+            &::-webkit-slider-runnable-track {
+                width: 200px;
+                height: 2px;
+                cursor: pointer;
+                background: #e2e2e2;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .price-wrap {
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        margin-bottom: 7px;
+
+        #one {
+            width: 73px;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            margin-right: 2px;
+            background: 0;
+            border: 0;
+            outline: 0;
+            color: #5a5a5a;
+            font-size: 14px;
+            line-height: 1.2em;
+            font-weight: 400;
+        }
+
+        #two {
+            width: 25px;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            margin-right: 2px;
+            background: 0;
+            border: 0;
+            outline: 0;
+            color: #7d7d7d;
+            font-size: 14px;
+            line-height: 1.2em;
+            font-weight: 400;
+        }
+    }
+
+    .price-wrap-1 {
+        display: flex;
+
+        label {
+            color: #7d7d7d;
+        }
+    }
+
+    .price-wrap-2 {
+        display: flex;
+
+        label {
+            color: #7d7d7d;
+        }
+
+        #message {
+            font-size: 15px;
+        }
+    }
+
+    .price-title {
+        margin-right: 5px;
+        color: #252525;
+    }
+
+    .price-wrap_line {
+        margin: 0 7px;
+        font-size: 24px;
+    }
+
+    .average-status {
+
+        .rating {
+
+            ul {
+                padding-left: 0;
+
+                li {
+
+                    a {
+
+                        i {
+                            font-size: 12px;
+                            color: #FFA800;
+                        }
+
+                        &:hover {
+                            color: #FFA800;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .search-input {
+        position: relative;
+        margin-bottom: 40px;
+
+        .input {
+            width: 100%;
+            padding: 12px 8px;
+            border-radius: 4px;
+            outline: none;
+            border: 1px solid rgba(128, 128, 128, 0.31);
+        }
+
+        .button {
+
+            position: absolute;
+            right: 0;
+            padding: 12px 8px;
+            bottom: 0;
+            border-color: transparent;
+            border-radius: 4px;
+            border: 1px solid rgba(128, 128, 128, 0.31);
+            transition: .4s;
+
+            &:hover {
+                background-color: #FF6000;
+                color: #fff;
+            }
+        }
+    }
+
+    .product-tags {
+        h6 {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .product-tag {
+            .position {
+                display: inline-block;
+                color: #252525;
+                background-color: #F2F2F2;
+                font-size: 13px;
+                padding: 5px 10px;
+                border-radius: 4px;
+                margin: 0 0 3px;
+                white-space: nowrap;
+                transition: .4s;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #ff6000;
+                }
+            }
+
+        }
+    }
+
+    .product-lists {
+        margin-bottom: 40px;
+        background: #fff;
+        padding: 0 10px;
+
+        .product-list {
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding-bottom: 25px;
+                    margin: 0;
+
+                    a {
+                        font-size: 16px;
+                        color: #252525;
+                        font-weight: 500;
+
+                        .product-name {
+                            line-height: 2.7;
+                        }
+
+                        img {
+                            float: right;
+                            margin-left: 4px;
+                            width: 67px;
+
+                            box-shadow: none;
+                        }
+
+                        del {
+                            line-height: 1;
+                        }
+
+                        .new-price {
+                            color: #ff6000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 1;
+                            margin-left: 15px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #Modern-Technology {
+
+        margin: 40px 0;
+
+        .all {
+            border: 1px solid #8c8c8c22;
+
+            .all-content {
+                padding: 12px 0px 21px 31px;
+            }
+
+            .left-content {
+
+
+                span {
+
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    color: #7d7d7d;
+                    font-family: 'Jost', sans-serif;
+                }
+
+                h3 {
+                    margin: 10px 0;
+                    font-size: 28px;
+                    line-height: 1.6;
+                    font-weight: 500;
+                    color: #252525;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                    line-height: 1.8;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 15px;
+                    color: #7d7d7d;
+                }
+
+                a {
+
+                    border: 1px solid #0465D2;
+                    border-radius: 4px;
+                    background-color: #0465D2;
+                    color: #fff;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                    line-height: 1;
+                    padding: 17px 27px;
+                    text-align: center;
+                    transition: .4s;
+
+                    &:hover {
+                        background-color: #252525;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+    #All-category-slider {
+        position: relative;
+        background-color: #F2F2F2;
+        padding: 20px 0;
+        margin: 50px 0;
+
+        h4 {
+            margin-bottom: 20px;
+            color: #252525;
+            font-size: 15px;
+        }
+
+        .all-slider {
+
+
+            .all-content {
+                width: 18%;
+
+                .top-img {
+                    position: relative;
+
+                    img {
+                        width: 112px;
+                        height: 106px;
+                        background: #F2F2F2;
+                    }
+
+                    span {
+                        margin-left: 10px;
+                        background: #ff6100;
+                        width: 20px;
+                        height: 20px;
+                        color: #fff;
+                        text-align: center;
+                        display: inline-block;
+                        font-size: 11px;
+                        position: absolute;
+                        vertical-align: middle;
+                        padding: 3px;
+                        border-radius: 3px;
+                        top: 8px;
+                        left: 14px;
+                    }
+                }
+
+                .bottom-content {
+                    font-size: 15px;
+                    margin-top: 10px;
+                    line-height: 1.75;
+                    font-weight: 500;
+                    color: #252525;
+                }
+            }
+        }
+
+        #categorySlider {
+            position: relative;
+
+            .slick-arrow {
+                position: absolute;
+                top: -2rem;
+
+                &::before {
+                    color: #7d7d7d;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+
+            .slick-prev {
+                left: unset;
+                right: 4.5rem;
+            }
+
+            .slick-next {
+                left: unset;
+                right: 3rem;
+            }
+        }
+    }
+
+    #Best-selling {
+        .whole-devices1 {
+            position: relative;
+            margin-bottom: 30px;
+            background-color: #fff;
+
+            .top-device-info {
+                margin-bottom: 20px;
+
+                .device-raiting {
+                    i {
+                        color: #FFA800;
+                        font-size: 15px;
+                    }
+                }
+
+                .old-price {
+                    span {
+                        font-size: 12px;
+                        color: #7d7d7d;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .buttom-device-info {
+                padding-bottom: 30px;
+
+                .device-name {
+
+                    h5 {
+                        a {
+                            font-size: 17px;
+                            font-weight: 500;
+                            color: #252525;
+                            transition: .4s;
+
+                            &:hover {
+                                color: #ff6000;
+                            }
+                        }
+                    }
+                }
+
+                .device-price {
+
+                    span {
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #ff6000;
+                    }
+                }
+            }
+
+            .device-img {
+
+                background-image: url(/asset/image/device1.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff1.jpeg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img1 {
+
+                background-image: url(/asset/image/device2.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff2.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img2 {
+
+                background-image: url(/asset/image/device3.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff3.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img3 {
+
+                background-image: url(/asset/image/device4.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff4.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img4 {
+
+                background-image: url(/asset/image/device4.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff5.png") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img5 {
+
+                background-image: url(/asset/image/device5.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff6.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img6 {
+
+                background-image: url(/asset/image/device6.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff7.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img7 {
+
+                background-image: url(/asset/image/device7.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff8.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img8 {
+
+                background-image: url(/asset/image/device10.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff9.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img9 {
+
+                background-image: url(/asset/image/hover-on-image2.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff10.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img10 {
+
+                background-image: url(/asset/image/hover-on-image5.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hoveroff11.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            .device-img11 {
+
+                background-image: url(/asset/image/hover-on-image4.jpg);
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 20px;
+                height: 220px;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.166);
+                transition: .4s;
+
+                &:hover {
+                    background: url("/asset/image/hover-off-image6.jpg") no-repeat;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+
+                .sale {
+                    position: absolute;
+                    top: 65px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .sale1 {
+                    position: absolute;
+                    top: 93px;
+                    left: 10px;
+                    background-color: #FF6000;
+                    padding: 0 4px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .discount-percent {
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+                    background-color: #F7BA01;
+                    padding: 0 3px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+
+
+            &:hover .add-to-cart-hover {
+                opacity: 1;
+                bottom: 0;
+            }
+
+            .add-to-cart-hover {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                transition: .6s;
+                bottom: -100%;
+
+                .top-icon {
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+
+                .add-cart {
+                    background: #3a3a3a;
+                    color: #fff;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    line-height: 1;
+                    padding: 13px 20px 11px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0;
+                    width: 100%;
+
+                    a {
+                        color: white;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+
+        }
+
+
+        .top-part {
+
+            .content {
+                text-align: center;
+
+                span {
+                    display: block;
+                    line-height: 1;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #ff6000;
+                    margin-bottom: 15px;
+                }
+
+                h2 {
+                    letter-spacing: .3px;
+                    font-size: 35px;
+                    line-height: 1.4;
+                    font-weight: 500;
+                }
+            }
+
+            .button-part {
+
+                padding: 15px 0;
+                width: 70%;
+                border-radius: 30px;
+                background-color: #F2F2F2;
+                margin: 60px auto;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .all {
+                    color: #ff6000;
+                }
+
+                button {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #7d7d7d;
+                    outline: none;
+                    border: none;
+                    padding: 0 30px;
+                    background-color: transparent;
+                    transition: .4s;
+                    line-height: 1.15;
+
+                    &:hover {
+                        color: #ff6000;
+                    }
+                }
+            }
+        }
+    }
+}

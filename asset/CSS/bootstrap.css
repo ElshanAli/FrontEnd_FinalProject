@@ -737,9 +737,10 @@ progress {
   flex: 0 0 auto;
   width: 16.66666667%;
 }
+
 .col-2-5{
   flex: 0 0 auto;
-  width: 18%;
+  width: 20%;
 }
 
 .col-3 {
@@ -912,6 +913,10 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .row-cols-sm-2-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
   .row-cols-sm-3 > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
@@ -939,6 +944,10 @@ progress {
   .col-sm-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  .col-sm-2-5 {
+    flex: 0 0 auto;
+    width: 20%;
   }
   .col-sm-3 {
     flex: 0 0 auto;
@@ -1081,6 +1090,10 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .row-cols-md-2-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
   .row-cols-md-3 > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
@@ -1108,6 +1121,10 @@ progress {
   .col-md-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  .col-md-2-5 {
+    flex: 0 0 auto;
+    width: 20%;
   }
   .col-md-3 {
     flex: 0 0 auto;
@@ -1250,6 +1267,10 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .row-cols-lg-2-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
   .row-cols-lg-3 > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
@@ -1277,6 +1298,10 @@ progress {
   .col-lg-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  .col-lg-2-5 {
+    flex: 0 0 auto;
+    width: 20%;
   }
   .col-lg-3 {
     flex: 0 0 auto;
@@ -1419,6 +1444,10 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .row-cols-xl-2-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
   .row-cols-xl-3 > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
@@ -1446,6 +1475,10 @@ progress {
   .col-xl-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  .col-xl-2-5 {
+    flex: 0 0 auto;
+    width: 20%;
   }
   .col-xl-3 {
     flex: 0 0 auto;
@@ -1588,6 +1621,10 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .row-cols-xxl-2-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
   .row-cols-xxl-3 > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
@@ -1615,6 +1652,10 @@ progress {
   .col-xxl-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  .col-xxl-2-5 {
+    flex: 0 0 auto;
+    width: 20%;
   }
   .col-xxl-3 {
     flex: 0 0 auto;
@@ -2275,7 +2316,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
