@@ -79,7 +79,7 @@
         }
     }
 
-    .product-container {}
+   
 
     .stock-details {
         .stock-sold {
@@ -220,17 +220,18 @@
 }
 
 #Tab-menu-description {
-    
-margin-bottom: 100px;
+
+    margin-bottom: 50px;
+
     .product-desc {
         margin: 0 auto;
 
-        
+
     }
 
     #tab-2 {
 
-        
+
 
         .color {
             padding-right: 140px;
@@ -261,7 +262,7 @@ margin-bottom: 100px;
 
     #tab-1 {
 
-        
+
         margin-bottom: 20px;
 
         p {
@@ -274,7 +275,7 @@ margin-bottom: 100px;
         padding: 0px;
         list-style: none;
 
-        
+
 
         li {
             background: none;
@@ -285,12 +286,12 @@ margin-bottom: 100px;
             font-weight: 700;
             cursor: pointer;
 
-            
+
         }
 
         li.current {
             background: #fff;
-            color: #222;  
+            color: #222;
         }
     }
 
@@ -311,18 +312,21 @@ margin-bottom: 100px;
 
 #Also-liked {
 
-    .also-title{
+    .also-title {
         margin-bottom: 30px;
-        h4{
+
+        h4 {
             font-size: 22px;
             font-weight: 500;
             color: #252525;
         }
     }
-    .border-also-bottom{
+
+    .border-also-bottom {
         border-bottom: 1px solid rgba(128, 128, 128, 0.26);
         margin-bottom: 20px;
     }
+
     .slider-prev {
         position: absolute;
         top: -51px;
@@ -330,8 +334,8 @@ margin-bottom: 100px;
         border-radius: 4px;
         border: none;
         width: 0;
-        
-    }   
+
+    }
 
     .slider-next {
         position: absolute;
@@ -339,15 +343,16 @@ margin-bottom: 100px;
         border: none;
         border-radius: 4px;
         right: 110px;
-       width: 0;
-        
+        width: 0;
+
     }
+
     .whole-devices1 {
         position: relative;
         margin-bottom: 30px;
         background-color: #fff;
         width: 110%;
-       
+
 
 
 
@@ -1095,29 +1100,46 @@ margin-bottom: 100px;
 
         .alsoSlide {
             position: relative;
-    
+
             .slick-arrow {
                 position: absolute;
-                
-    
+
+
                 &::before {
                     color: #7d7d7d;
                     background-color: transparent;
                     border: none;
                 }
             }
-    
-            
+
+
         }
     }
 
-    }
+}
 
-  #Product-Reviews{
+#Product-Reviews {
 
-    .all-reviews{
-        img{
-            border-radius: 50%;
+    .all-reviews {
+
+        .title-also-img {
+            img {
+                border-radius: 50%;
+                width: 72px;
+
+            }
+
+        }
+        .title-meta {
+
+            p {
+                margin-left: 70px;
+            }
+        }
+
+        .star-comment {
+            margin-left: 209px;
+            font-size: 13px;
         }
     }
-  }  
+}

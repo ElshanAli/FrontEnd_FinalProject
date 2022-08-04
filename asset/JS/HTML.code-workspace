@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\LabTaskMyBooks\\HTML"
+		},
+		{
+			"path": "..\\..\\..\\Credit CalculationJS"
+		},
+		{
+			"path": "..\\..\\..\\OOP"
+		},
+		{
+			"path": "..\\..\\..\\EncapsulationJS"
+		},
+		{
+			"path": "..\\..\\..\\Ingeritance_JS"
+		},
+		{
+			"path": "..\\..\\..\\Slider_JS"
+		},
+		{
+			"path": "..\\..\\..\\ClassTaskABB"
+		},
+		{
+			"path": "..\\..\\..\\ABB_MenuBar"
+		},
+		{
+			"path": "..\\..\\..\\Storage_JS"
+		},
+		{
+			"path": "..\\..\\..\\FunctionPractice"
+		},
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\New folder (2)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Front_Final-Project"
+	}
+}

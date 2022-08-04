@@ -9,16 +9,22 @@ function removeProduct(el, productId) {
 
     localStorage.setItem("products", JSON.stringify(products));
 
-    el.closest("tr").remove();
+    if (products.length > 0) {
+        el.closest("tr").remove();
+    } else {
+        checkProductEmpty();
+    }
 
     updateBasketCount();
+
+    CalcTotal();
 }
 
 function checkProductEmpty() {
     if (products.length == 0) {
         cartEmpty.classList.remove("d-none");
         basketList.classList.add("d-none");
-    }else {
+    } else {
         cartEmpty.classList.remove("d-block");
         basketList.classList.remove("d-none");
     }
@@ -50,7 +56,8 @@ function updatePrice(el, price, productId) {
     parent.querySelector('.subtotal').innerText = price;
 
     localStorage.setItem("products", JSON.stringify(products));
-    
+
+    CalcTotal();
 
     // let totalPrice = el.parentElement.parentElement.querySelector(".total-price");
 
@@ -63,7 +70,7 @@ products.forEach((product) => {
     basketItems.innerHTML = `
     <tr>
         <td>
-            <button class="remove-product border-0 bg-transparent" onclick="removeProduct(event.target, ${product.id })">
+            <button class="remove-product border-0 bg-transparent" onclick="removeProduct(event.target, ${product.id})">
                 <i class="far fa-trash-alt text-danger"></i>
             </button>
         </td>
@@ -81,9 +88,9 @@ products.forEach((product) => {
         </td>
         <td>
             <div class="quantity">
-                    <button class="quantity-btn minus" onclick="updatePrice(event.target, ${product.price }, ${product.id})">-</button>
+                    <button class="quantity-btn minus" onclick="updatePrice(event.target, ${product.price}, ${product.id})">-</button>
                 <input type="number" value="${product.count}" class="quantity-input">
-                <button class="quantity-btn plus" onclick="updatePrice(event.target, ${product.price }, ${product.id})">+</button>
+                <button class="quantity-btn plus" onclick="updatePrice(event.target, ${product.price}, ${product.id})">+</button>
             </div>
         </td>
         <td>
@@ -92,3 +99,16 @@ products.forEach((product) => {
     </tr>
       ` + basketItems.innerHTML;
 });
+
+
+function CalcTotal() {
+    var total = 0;
+
+    products.forEach((product) => {
+        total += product.price * product.count;
+    });
+
+    document.querySelector(".total-amount").innerText = total;
+}
+
+CalcTotal();

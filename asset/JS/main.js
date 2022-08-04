@@ -1,4 +1,3 @@
-
 var btn = $('#button');
 
 $(window).scroll(function () {
@@ -33,12 +32,15 @@ $(".for-slider").owlCarousel({
   }
 })
 $(document).ready(function () {
-  $('.bottom-nav li a').click(function(){
-      var position = $(this).position();
-      var margin = 37;
-      $('.slider').css({"left":+position.left+margin ,  "transform": "translateX(-50%)"});
-      $('.bottom-nav li a').removeClass('active-icon');
-      $(this).addClass('active-icon');
+  $('.bottom-nav li a').click(function () {
+    var position = $(this).position();
+    var margin = 37;
+    $('.slider').css({
+      "left": +position.left + margin,
+      "transform": "translateX(-50%)"
+    });
+    $('.bottom-nav li a').removeClass('active-icon');
+    $(this).addClass('active-icon');
   });
 });
 
@@ -102,9 +104,6 @@ $('.small-img').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -279,7 +278,6 @@ $('.alsoSlide').slick({
         slidesToScroll: 1
       }
     }
-
   ]
 });
 
@@ -321,7 +319,6 @@ $('.alsoSlide-basket').slick({
         slidesToScroll: 1
       }
     }
-
   ]
 });
 
@@ -368,53 +365,7 @@ if (upperSlider !== null) {
 
 
 
-// var swiper = new Swiper(".for-slider", {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-// });
 
-
-
-// $('.for-slider').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   prevArrow:`
-//   <button type="button" class="slider-prev"><i class="fa-solid fa-angle-left"></i></button>
-//   `,
-//   nextArrow:`
-//   <button type="button" class="slider-next"><i class="fa-solid fa-angle-right"></i></button>
-//   `,
-
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-
-//   ]
-// });
 
 window.onscroll = () => stickyHeader();
 
@@ -429,16 +380,16 @@ function stickyHeader() {
   }
 }
 
-let addToCartBtns = document.querySelectorAll(".add-cart")
+let addToCartBtns = document.querySelectorAll(".add-cart");
 let products = JSON.parse(localStorage.getItem("products"));
 
 if (products == null) {
-    localStorage.setItem("products", JSON.stringify([]));
-    products = [];
+  localStorage.setItem("products", JSON.stringify([]));
+  products = [];
 }
 
 function updateBasketCount() {
-  let basketCount = document.querySelector("#basketCount")
+  let basketCount = document.querySelector("#basketCount");
   let products = JSON.parse(localStorage.getItem("products"));
   basketCount.innerText = products.length;
 }
@@ -453,27 +404,87 @@ function addToCartBtn(event, productId) {
   let product = products.find(p => p.id == productId);
 
   if (product === undefined) {
-      products.push({
-          id : productId,
-          image: productImage,
-          title: productTitle,
-          price: +productPrice.split("US $")[1],
-          count: 1
-      });
-  }else {
-      product.count = +product.count + 1;
+    products.push({
+      id: productId,
+      image: productImage,
+      title: productTitle,
+      price: +productPrice.split("US $")[1],
+      count: 1
+    });
+  } else {
+    product.count = +product.count + 1;
   }
 
   updateBasketCount();
-  
+
   localStorage.setItem("products", JSON.stringify(products));
+
+  toastr.options = {
+    "closeButton": false,
+    "debug": false,
+    "newestOnTop": true,
+    "progressBar": true,
+    "positionClass": "toast-top-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "3000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  };
+
+  toastr.success("Mehsul sebete elave olundu!");
 }
 
 addToCartBtns.forEach((cartBtn, index) => {
   cartBtn.addEventListener("click", (event) => {
     event.preventDefault();
-    addToCartBtn(event, index + 1)
-  })
+    addToCartBtn(event, index + 1);
+  });
 });
 
 updateBasketCount();
+
+
+
+
+
+
+
+const pageHeader = document.querySelector(".page-header");
+const openMobMenu = document.querySelector(".open-mobile-menu");
+const closeMobMenu = document.querySelector(".close-mobile-menu");
+const topMenuWrapper = document.querySelector(".top-menu-wrapper");
+const isVisible = "is-visible";
+const showOffCanvas = "show-offcanvas";
+const noTransition = "no-transition";
+let resize;
+
+// Opening Mobile Menu
+openMobMenu.addEventListener("click", () => {
+  topMenuWrapper.classList.add(showOffCanvas);
+});
+
+// Closing Mobile Menu
+closeMobMenu.addEventListener("click", () => {
+  topMenuWrapper.classList.remove(showOffCanvas);
+});
+
+// Resizing Screen
+window.addEventListener("resize", () => {
+  pageHeader.querySelectorAll("*").forEach(function(el) {
+    el.classList.add(noTransition);
+  });
+  clearTimeout(resize);
+  resize = setTimeout(resizingComplete, 300);
+});
+
+function resizingComplete() {
+  pageHeader.querySelectorAll("*").forEach(function(el) {
+    el.classList.remove(noTransition);
+  });
+}

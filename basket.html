@@ -13,7 +13,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
-    <link rel="stylesheet" href="asset/CSS/style.css">
     <link rel="icon" href="asset/image/cropped-favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -22,6 +21,10 @@
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Marcellus&family=Open+Sans:wght@300&family=Poppins:wght@200;400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+        integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/CSS/style.css">
 </head>
 
 <body>
@@ -72,7 +75,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="cntr-left">
-                        <a href=""><img src="asset/image/logo.png" alt=""></a>
+                        <a href="index.html"><img src="asset/image/logo.png" alt=""></a>
                     </div>
                     <div class="cntr-center">
                         <input type="text" placeholder="Search for your item's type.....">
@@ -817,7 +820,7 @@
 
                     <ul class="nav-links">
                         <li class="menu-item position-relative">
-                            <a href="#">
+                            <a href="index.html">
                                 Home
                                 <i class="fas fa-angle-down"></i>
                             </a>
@@ -979,7 +982,7 @@
                         </li>
 
                         <li class="menu-item">
-                            <a href="#">
+                            <a href="shop.html">
                                 Shop
                                 <i class="fas fa-angle-down"></i>
                             </a>
@@ -1111,7 +1114,7 @@
                         </li>
 
                         <li class="menu-item">
-                            <a href="#">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -1177,7 +1180,7 @@
                     <i class="fa-solid fa-basket-shopping"></i>
                     <span>Your cart is currently empty.</span>
                 </div>
-                <button class="button">Return to shop</button>
+                <button class="button"><a href="shop.html">Return to shop</a></button>
             </div>
             <div class="row basket-list d-none">
                 <div class="col-lg-8">
@@ -1214,11 +1217,11 @@
                         <table class="table table-bordered">
                             <tbody>
                                 <tr>
-                                    <th>Subtotal</th>
+                                    <th>Shipping</th>
                                     <td>
                                         <span class="symbol">
                                             $
-                                            <span class="amount">150</span>
+                                            <span class="amount">0</span>
                                         </span>
                                     </td>
                                 </tr>
@@ -1227,7 +1230,7 @@
                                     <td>
                                         <span class="symbol">
                                             $
-                                            <span class="amount">150</span>
+                                            <span class="amount total-amount">150</span>
                                         </span>
                                     </td>
                                 </tr>
@@ -2200,6 +2203,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="asset/JS/main.js"></script>
     <script src="asset/JS/basket.js"></script>
 </body>

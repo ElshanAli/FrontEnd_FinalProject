@@ -244,7 +244,7 @@
     flex-direction: column;
     margin: 20px 0;
     width: 100%;
-    
+
     &-box {
         border-top: 4px solid #ff6000;
         padding: 15px 20px;
@@ -252,9 +252,15 @@
         margin-bottom: 20px;
     }
 
-    .button{
+    .button {
         width: 180px;
         margin: 0 auto;
+        a{
+            color: #fff;
+        }
     }
-    
+}
+
+.toast-success {
+    background-color: #F7BA01;
 }
